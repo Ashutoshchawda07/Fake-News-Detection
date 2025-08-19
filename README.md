@@ -1,73 +1,61 @@
-📰 Fake News Detection using Machine Learning
-📌 Introduction
+# 📰 Fake News Detection using Machine Learning  
 
-Fake news has become a major issue in today’s digital world. In this project, we built a machine learning model to classify news articles as Real or Fake using text processing techniques and ML algorithms.
+## 📌 Introduction  
+Fake news has become a major issue in today’s digital world. In this project, we built a machine learning model to classify news articles as **Real** or **Fake** using text processing techniques and ML algorithms.  
 
-This project demonstrates:
+This project demonstrates:  
+- Data preprocessing & visualization  
+- Feature extraction using **TF-IDF**  
+- Training models (**Logistic Regression** & **Decision Tree**)  
+- Evaluating model performance  
+- Saving models for future predictions  
+  
+## 📊 Dataset  
+We used a dataset containing labeled news articles:  
+- **Label**: real or fake  
+- **Text**: news article content  
 
-Data preprocessing & visualization
+Dataset was preprocessed to clean and vectorize the text for ML.  
 
-Feature extraction using TF-IDF
+## ⚙️ Steps in Project  
 
-Training models (Logistic Regression & Decision Tree)
+### 🔹 Data Preprocessing  
+- Removed null values, cleaned text.  
+- Converted labels to binary (1 = Real, 0 = Fake).  
 
-Evaluating model performance
+### 🔹 Exploratory Data Analysis (EDA)  
+- Word clouds for most frequent words.  
+- Bar charts of word frequencies.  
 
-Saving models for future predictions
+### 🔹 Feature Extraction  
+- Used **TF-IDF Vectorizer** to convert text to numerical features.  
 
-(Optional) Deployment with Flask/Streamlit
+### 🔹 Model Training  
+- **Logistic Regression**  
+- **Decision Tree Classifier**  
 
-📊 Dataset
+### 🔹 Evaluation  
+- Accuracy Score  
+- Confusion Matrix  
 
-We used a dataset containing labeled news articles:
+### 🔹 Model Saving  
+- Saved both trained models (`.pkl` files).  
+- Saved **TF-IDF Vectorizer** for re-use during prediction.  
 
-Label: real or fake
-
-Text: News article content
-
-Dataset was preprocessed to clean and vectorize the text for ML.
-
-⚙️ Steps in Project
-
-Data Preprocessing
-
-Removed null values, cleaned text.
-
-Converted labels to binary (1 = Real, 0 = Fake).
-
-Exploratory Data Analysis (EDA)
-
-Word clouds for most frequent words.
-
-Bar charts of word frequencies.
-
-Feature Extraction
-
-Used TF-IDF Vectorizer to convert text to numerical features.
-
-Model Training
-
-Logistic Regression
-
-Decision Tree Classifier
-
-Evaluation
-
-Accuracy Score
-
-Confusion Matrix
-
-Model Saving
-
-Saved both trained models (.pkl files).
-
-Saved TF-IDF Vectorizer for re-use during prediction.
-## 📈 Results
+## 📈 Results  
 
 - **Logistic Regression Accuracy**:  
-  - Train: 99.35%  
-  - Test: 98.97%  
+  - Train: **99.35%**  
+  - Test: **98.97%**  
 
 - **Decision Tree Accuracy**:  
-  - Train: 100%  
-  - Test: 99.58%  
+  - Train: **100%**  
+  - Test: **99.58%**  
+
+
+## 🚀 Future Work  
+- Improve model with **ensemble methods** (Random Forest, XGBoost).  
+- Deploy the project as a **web app** (Flask/Streamlit).  
+- Add more robust **text preprocessing** (stopwords removal, stemming/lemmatization).  
+
+
